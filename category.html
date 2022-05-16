@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="css/style.min.css">
   <script defer src="js/jquery.min.js"></script>
   <script defer src="js/slick.min.js"></script>
+  <script defer src="js/jquery.ui.js"></script>
   <script defer src="js/script.js"></script>
   <title>ELECITY</title>
 </head>
 
 <body>
   <!-- header-->
-  <header class=" header">
+  <header class=" header" id="header">
 
     <div class="header__top">
       <div class="container">
@@ -38,6 +39,18 @@
               <li class="header__topNav-item"><a class="header__topNav-link" href="#">Оставить обращение</a></li>
             </ul>
           </div>
+          <!-- social link 2-->
+          <div class="header__social2">
+            <a class="header__social-item2" href="#" target="_blank"><img src="img/icons/viber.svg" alt="Viber"></a>
+            <a class="header__social-item2" href="#" target="_blank"><img src="img/icons/telegram.svg"
+                alt="Telegram"></a>
+          </div>
+          <!-- contacts 2 -->
+          <div class="header__contacts2">
+            <div class="header__contacts-phone2">
+              <a href="tel:+380971509555">+38(097)150-956-55</a>
+            </div>
+          </div>
           <!-- profile acc -->
           <div class="header__user-profile">
             <a class="header__profile-link" href="#">Личный кабинет</a>
@@ -56,10 +69,16 @@
             <div class="header__logo">
               <a class="header__logo-img" href="/"></a>
             </div>
+            <!-- all category -->
+            <div class="header__bottom-all2">
+              <a class="header__all-category-link2" href="#"><span class="header__all-category-icon2"></span>Все
+                категории</a>
+            </div>
             <!-- menu -->
             <div class="header__centerNav">
               <ul class="header__centerNav-menu">
-                <li class="header__centerNav-item active"><a class="active header__centerNav-link" href="#">Техника</a>
+                <li class="header__centerNav-item active"><a class="active header__centerNav-link"
+                    href="./category.html">Техника</a>
                 </li>
                 <li class="header__centerNav-item"><a class="header__centerNav-link" href="#">Мебель</a></li>
                 <li class="header__centerNav-item"><a class="header__centerNav-link" href="#">Инструменты</a></li>
@@ -153,7 +172,7 @@
   <section class="category-page">
     <div class="container">
       <h1 class="category-page__title">Холодильники</h1>
-        <!-- mini filter -->
+      <!-- mini filter -->
       <div class="category-page__mini-filter">
         <a href="#">Инверторные</a>
         <a href="#">Инверторные с дисплеем</a>
@@ -248,7 +267,7 @@
           </div>
         </div>
 
-        
+
         <!-- content-->
         <div class="category-page__content">
           <!-- catalog products -->
@@ -267,807 +286,1039 @@
               <div class="category-items__view-settings">
                 <a class="category-items__view-popular" href="#">Сначала популярные</a>
                 <a class="category-items__view-num" href="#">На странице: <b>20</b></a>
-                <a class="category-items__view-line active" href="#"></a>
-                <a class="category-items__view-block" href="#"></a>
+                <a id="line-view-style-button" class="category-items__view-line" href="#"></a>
+                <a id="block-view-style-button" class="category-items__view-block active" href="#"></a>
               </div>
             </div>
             <!-- settings end-->
 
-            <div class="category-items__wrapper">
+            <div id="item-list-style" class="category-items__wrapper">
               <!-- 1 catalog item start -->
               <div class="short-item__item">
+                <div class="short-item__item-block-style">
+                  <!-- catalog img start -->
+                  <div class="short-item__img-link" href="#">
+                    <div class="short-item__lt-info">
+                      <span class="short-item__new">Новинка</span>
+                      <span class="short-item__present">Подарок</span>
+                    </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
+                    <div class="short-item__lb-info">
+                      <span class="short-item__discount">-20%</span>
+                    </div>
+
+                    <div class="short-item__rt-info">
+                      <span class="short-item__add-link"></span>
+                      <span class="short-item__add-compare"></span>
+                    </div>
+
+                    <a href="#">
+                      <img src="img/hol-1.png" alt="" class="hol-1.png">
+                    </a>
                   </div>
+                  <!-- catalog img end -->
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
+                  <!-- catalog price start -->
+                  <div class="short-item__price">
+                    <p class="short-item__price-num">11 000 грн</p>
+                    <s class="short-item__price-s-num">15 199 грн</s>
                   </div>
+                  <!-- catalog price end -->
 
-                  <img src="img/hol-1.png" alt="" class="hol-1.png">
-                </a>
-                <!-- catalog img end -->
+                  <!-- catalog item title start-->
+                  <div class="short-item__item-title">
+                    <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
+                  </div>
+                  <!-- catalog item title end-->
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">11 000 грн</p>
-                  <s class="short-item__price-s-num">15 199 грн</s>
+                  <!-- catalog item info start -->
+                  <div class="short-item__item-info">
+                    <div class="short-item__item-rating">
+                      <img src="img/icons/star-activ.jpg" alt="1">
+                      <img src="img/icons/star-activ.jpg" alt="2">
+                      <img src="img/icons/star-activ.jpg" alt="3">
+                      <img src="img/icons/star-activ.jpg" alt="4">
+                      <img src="img/icons/star-pasiv.svg" alt="5">
+                    </div>
+
+                    <div class="short-item__item-comment">
+                      <a class="short-item__comment-link" href="#">17</a>
+                    </div>
+                  </div>
+                  <!-- catalog item info end -->
+
+                  <!-- button cart start-->
+                  <a class="short-item__add-cart" href="#">В корзину</a>
+                  <!-- button cart end-->
                 </div>
-                <!-- catalog price end -->
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
+                <div class="short-item__item-list-style">
+                  <div class="short-item__ls-image">
+                    <a class="short-item__ls-img-link" href="#">
+                      <img class="short-item__img" src="img/hol-3.png" alt="hol-3.png">
+                    </a>
                   </div>
 
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">17</a>
-                  </div>
-                </div>
-                <!-- catalog item info end -->
 
-                <!-- button cart start-->
-                <a class="short-item__add-cart" href="#">В корзину</a>
-                <!-- button cart end-->
-              </div>
-              <!-- catalog item end -->
+                  <div class="short-item__ls-wrapper">
+                    <div class="short-item__ls-content">
+                      <div class="short-item__ls-actions">
+                        <span class="short-item__new">Новинка</span>
+                        <span class="short-item__present">Подарок</span>
+                        <span class="short-item__discount">-20%</span>
+                      </div>
 
-              <!-- 2 catalog item start -->
-              <div class="short-item__item">
+                      <div class="short-item__ls-title">
+                        <a class="short-item__ls-link" href="#">Холодильник Electrolux EWH 80 Formax</a>
+                      </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
-                  </div>
+                      <div class="short-item__ls-rating">
+                        <div class="short-item__item-rating">
+                          <img src="img/icons/star-activ.jpg" alt="1">
+                          <img src="img/icons/star-activ.jpg" alt="2">
+                          <img src="img/icons/star-activ.jpg" alt="3">
+                          <img src="img/icons/star-activ.jpg" alt="4">
+                          <img src="img/icons/star-pasiv.svg" alt="5">
+                        </div>
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
-                  </div>
+                        <div class="short-item__item-comment">
+                          <a class="short-item__comment-link" href="#">17</a>
+                        </div>
+                      </div>
+                    </div>
 
-                  <img src="img/hol-2.png" alt="" class="hol-2.png">
-                </a>
-                <!-- catalog img end -->
+                    <div class="short-item__ls-buy">
+                      <div class="short-item__price">
+                        <p class="short-item__price-num">11 000 грн</p>
+                        <s class="short-item__price-s-num">15 199 грн</s>
+                      </div>
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">14 200грн</p>
-                  <s class="short-item__price-s-num">17 399грн</s>
-                </div>
-                <!-- catalog price end -->
+                      <div class="short-item__ls-buttons">
+                        <div class="short-item__ls-button-list">
+                          <span class="short-item__add-link"></span>
+                          <span class="short-item__add-compare"></span>
+                        </div>
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Стиральная машина LG F-1096TD3</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
-                  </div>
-
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">2</a>
-                  </div>
-                </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <!-- button cart end-->
-                <a class="short-item__add-cart" href="#">В корзину</a>
-              </div>
-              <!-- catalog item end -->
-
-              <!-- 3 catalog item start -->
-              <div class="short-item__item">
-
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
-                  </div>
-
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
-                  </div>
-
-                  <img src="img/hol-3.png" alt="" class="hol-3.png">
-                </a>
-                <!-- catalog img end -->
-
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">14 200грн</p>
-                  <s class="short-item__price-s-num">17 399грн</s>
-                </div>
-                <!-- catalog price end -->
-
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Микроволновая печь WHIRLPOOL AMW 730 IX</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
-                  </div>
-
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">2</a>
+                        <a class="short-item__add-cart" href="#">В корзину</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <span class="short-item__add-cart-disabled">Нет в наличии</span>
-                <!-- button cart end-->
               </div>
               <!-- catalog item end -->
 
               <!-- 1 catalog item start -->
               <div class="short-item__item">
+                <div class="short-item__item-block-style">
+                  <!-- catalog img start -->
+                  <div class="short-item__img-link" href="#">
+                    <div class="short-item__lt-info">
+                      <span class="short-item__new">Новинка</span>
+                      <span class="short-item__present">Подарок</span>
+                    </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
+                    <div class="short-item__lb-info">
+                      <span class="short-item__discount">-20%</span>
+                    </div>
+
+                    <div class="short-item__rt-info">
+                      <span class="short-item__add-link"></span>
+                      <span class="short-item__add-compare"></span>
+                    </div>
+
+                    <a href="#">
+                      <img src="img/hol-2.png" alt="" class="hol-2.png">
+                    </a>
                   </div>
+                  <!-- catalog img end -->
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
+                  <!-- catalog price start -->
+                  <div class="short-item__price">
+                    <p class="short-item__price-num">11 000 грн</p>
+                    <s class="short-item__price-s-num">15 199 грн</s>
                   </div>
+                  <!-- catalog price end -->
 
-                  <img src="img/hol-1.png" alt="" class="hol-1.png">
-                </a>
-                <!-- catalog img end -->
+                  <!-- catalog item title start-->
+                  <div class="short-item__item-title">
+                    <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
+                  </div>
+                  <!-- catalog item title end-->
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">11 000 грн</p>
-                  <s class="short-item__price-s-num">15 199 грн</s>
+                  <!-- catalog item info start -->
+                  <div class="short-item__item-info">
+                    <div class="short-item__item-rating">
+                      <img src="img/icons/star-activ.jpg" alt="1">
+                      <img src="img/icons/star-activ.jpg" alt="2">
+                      <img src="img/icons/star-activ.jpg" alt="3">
+                      <img src="img/icons/star-activ.jpg" alt="4">
+                      <img src="img/icons/star-pasiv.svg" alt="5">
+                    </div>
+
+                    <div class="short-item__item-comment">
+                      <a class="short-item__comment-link" href="#">17</a>
+                    </div>
+                  </div>
+                  <!-- catalog item info end -->
+
+                  <!-- button cart start-->
+                  <a class="short-item__add-cart" href="#">В корзину</a>
+                  <!-- button cart end-->
                 </div>
-                <!-- catalog price end -->
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
+                <div class="short-item__item-list-style">
+                  <div class="short-item__ls-image">
+                    <a class="short-item__ls-img-link" href="#">
+                      <img class="short-item__img" src="img/hol-3.png" alt="hol-3.png">
+                    </a>
                   </div>
 
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">17</a>
-                  </div>
-                </div>
-                <!-- catalog item info end -->
 
-                <!-- button cart start-->
-                <a class="short-item__add-cart" href="#">В корзину</a>
-                <!-- button cart end-->
-              </div>
-              <!-- catalog item end -->
+                  <div class="short-item__ls-wrapper">
+                    <div class="short-item__ls-content">
+                      <div class="short-item__ls-actions">
+                        <span class="short-item__new">Новинка</span>
+                        <span class="short-item__present">Подарок</span>
+                        <span class="short-item__discount">-20%</span>
+                      </div>
 
-              <!-- 2 catalog item start -->
-              <div class="short-item__item">
+                      <div class="short-item__ls-title">
+                        <a class="short-item__ls-link" href="#">Холодильник Electrolux EWH 80 Formax</a>
+                      </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
-                  </div>
+                      <div class="short-item__ls-rating">
+                        <div class="short-item__item-rating">
+                          <img src="img/icons/star-activ.jpg" alt="1">
+                          <img src="img/icons/star-activ.jpg" alt="2">
+                          <img src="img/icons/star-activ.jpg" alt="3">
+                          <img src="img/icons/star-activ.jpg" alt="4">
+                          <img src="img/icons/star-pasiv.svg" alt="5">
+                        </div>
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
-                  </div>
+                        <div class="short-item__item-comment">
+                          <a class="short-item__comment-link" href="#">17</a>
+                        </div>
+                      </div>
+                    </div>
 
-                  <img src="img/hol-2.png" alt="" class="hol-2.png">
-                </a>
-                <!-- catalog img end -->
+                    <div class="short-item__ls-buy">
+                      <div class="short-item__price">
+                        <p class="short-item__price-num">11 000 грн</p>
+                        <s class="short-item__price-s-num">15 199 грн</s>
+                      </div>
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">14 200грн</p>
-                  <s class="short-item__price-s-num">17 399грн</s>
-                </div>
-                <!-- catalog price end -->
+                      <div class="short-item__ls-buttons">
+                        <div class="short-item__ls-button-list">
+                          <span class="short-item__add-link"></span>
+                          <span class="short-item__add-compare"></span>
+                        </div>
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Стиральная машина LG F-1096TD3</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
-                  </div>
-
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">2</a>
-                  </div>
-                </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <!-- button cart end-->
-                <a class="short-item__add-cart" href="#">В корзину</a>
-              </div>
-              <!-- catalog item end -->
-
-              <!-- 3 catalog item start -->
-              <div class="short-item__item">
-
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
-                  </div>
-
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
-                  </div>
-
-                  <img src="img/hol-3.png" alt="" class="hol-3.png">
-                </a>
-                <!-- catalog img end -->
-
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">14 200грн</p>
-                  <s class="short-item__price-s-num">17 399грн</s>
-                </div>
-                <!-- catalog price end -->
-
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Микроволновая печь WHIRLPOOL AMW 730 IX</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
-                  </div>
-
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">2</a>
+                        <a class="short-item__add-cart" href="#">В корзину</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <span class="short-item__add-cart-disabled">Нет в наличии</span>
-                <!-- button cart end-->
               </div>
               <!-- catalog item end -->
 
               <!-- 1 catalog item start -->
               <div class="short-item__item">
+                <div class="short-item__item-block-style">
+                  <!-- catalog img start -->
+                  <div class="short-item__img-link" href="#">
+                    <div class="short-item__lt-info">
+                      <span class="short-item__new">Новинка</span>
+                      <span class="short-item__present">Подарок</span>
+                    </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
+                    <div class="short-item__lb-info">
+                      <span class="short-item__discount">-20%</span>
+                    </div>
+
+                    <div class="short-item__rt-info">
+                      <span class="short-item__add-link"></span>
+                      <span class="short-item__add-compare"></span>
+                    </div>
+
+                    <a href="#">
+                      <img src="img/hol-3.png" alt="" class="hol-3.png">
+                    </a>
                   </div>
+                  <!-- catalog img end -->
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
+                  <!-- catalog price start -->
+                  <div class="short-item__price">
+                    <p class="short-item__price-num">11 000 грн</p>
+                    <s class="short-item__price-s-num">15 199 грн</s>
                   </div>
+                  <!-- catalog price end -->
 
-                  <img src="img/hol-1.png" alt="" class="hol-1.png">
-                </a>
-                <!-- catalog img end -->
+                  <!-- catalog item title start-->
+                  <div class="short-item__item-title">
+                    <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
+                  </div>
+                  <!-- catalog item title end-->
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">11 000 грн</p>
-                  <s class="short-item__price-s-num">15 199 грн</s>
+                  <!-- catalog item info start -->
+                  <div class="short-item__item-info">
+                    <div class="short-item__item-rating">
+                      <img src="img/icons/star-activ.jpg" alt="1">
+                      <img src="img/icons/star-activ.jpg" alt="2">
+                      <img src="img/icons/star-activ.jpg" alt="3">
+                      <img src="img/icons/star-activ.jpg" alt="4">
+                      <img src="img/icons/star-pasiv.svg" alt="5">
+                    </div>
+
+                    <div class="short-item__item-comment">
+                      <a class="short-item__comment-link" href="#">17</a>
+                    </div>
+                  </div>
+                  <!-- catalog item info end -->
+
+                  <!-- button cart start-->
+                  <a class="short-item__add-cart" href="#">В корзину</a>
+                  <!-- button cart end-->
                 </div>
-                <!-- catalog price end -->
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
+                <div class="short-item__item-list-style">
+                  <div class="short-item__ls-image">
+                    <a class="short-item__ls-img-link" href="#">
+                      <img class="short-item__img" src="img/hol-3.png" alt="hol-3.png">
+                    </a>
                   </div>
 
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">17</a>
-                  </div>
-                </div>
-                <!-- catalog item info end -->
 
-                <!-- button cart start-->
-                <a class="short-item__add-cart" href="#">В корзину</a>
-                <!-- button cart end-->
-              </div>
-              <!-- catalog item end -->
+                  <div class="short-item__ls-wrapper">
+                    <div class="short-item__ls-content">
+                      <div class="short-item__ls-actions">
+                        <span class="short-item__new">Новинка</span>
+                        <span class="short-item__present">Подарок</span>
+                        <span class="short-item__discount">-20%</span>
+                      </div>
 
-              <!-- 2 catalog item start -->
-              <div class="short-item__item">
+                      <div class="short-item__ls-title">
+                        <a class="short-item__ls-link" href="#">Холодильник Electrolux EWH 80 Formax</a>
+                      </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
-                  </div>
+                      <div class="short-item__ls-rating">
+                        <div class="short-item__item-rating">
+                          <img src="img/icons/star-activ.jpg" alt="1">
+                          <img src="img/icons/star-activ.jpg" alt="2">
+                          <img src="img/icons/star-activ.jpg" alt="3">
+                          <img src="img/icons/star-activ.jpg" alt="4">
+                          <img src="img/icons/star-pasiv.svg" alt="5">
+                        </div>
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
-                  </div>
+                        <div class="short-item__item-comment">
+                          <a class="short-item__comment-link" href="#">17</a>
+                        </div>
+                      </div>
+                    </div>
 
-                  <img src="img/hol-2.png" alt="" class="hol-2.png">
-                </a>
-                <!-- catalog img end -->
+                    <div class="short-item__ls-buy">
+                      <div class="short-item__price">
+                        <p class="short-item__price-num">11 000 грн</p>
+                        <s class="short-item__price-s-num">15 199 грн</s>
+                      </div>
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">14 200грн</p>
-                  <s class="short-item__price-s-num">17 399грн</s>
-                </div>
-                <!-- catalog price end -->
+                      <div class="short-item__ls-buttons">
+                        <div class="short-item__ls-button-list">
+                          <span class="short-item__add-link"></span>
+                          <span class="short-item__add-compare"></span>
+                        </div>
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Стиральная машина LG F-1096TD3</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
-                  </div>
-
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">2</a>
-                  </div>
-                </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <!-- button cart end-->
-                <a class="short-item__add-cart" href="#">В корзину</a>
-              </div>
-              <!-- catalog item end -->
-
-              <!-- 3 catalog item start -->
-              <div class="short-item__item">
-
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
-                  </div>
-
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
-                  </div>
-
-                  <img src="img/hol-3.png" alt="" class="hol-3.png">
-                </a>
-                <!-- catalog img end -->
-
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">14 200грн</p>
-                  <s class="short-item__price-s-num">17 399грн</s>
-                </div>
-                <!-- catalog price end -->
-
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Микроволновая печь WHIRLPOOL AMW 730 IX</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
-                  </div>
-
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">2</a>
+                        <a class="short-item__add-cart" href="#">В корзину</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <span class="short-item__add-cart-disabled">Нет в наличии</span>
-                <!-- button cart end-->
               </div>
               <!-- catalog item end -->
 
               <!-- 1 catalog item start -->
               <div class="short-item__item">
+                <div class="short-item__item-block-style">
+                  <!-- catalog img start -->
+                  <div class="short-item__img-link" href="#">
+                    <div class="short-item__lt-info">
+                      <span class="short-item__new">Новинка</span>
+                      <span class="short-item__present">Подарок</span>
+                    </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
+                    <div class="short-item__lb-info">
+                      <span class="short-item__discount">-20%</span>
+                    </div>
+
+                    <div class="short-item__rt-info">
+                      <span class="short-item__add-link"></span>
+                      <span class="short-item__add-compare"></span>
+                    </div>
+
+                    <a href="#">
+                      <img src="img/hol-1.png" alt="" class="hol-1.png">
+                    </a>
                   </div>
+                  <!-- catalog img end -->
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
+                  <!-- catalog price start -->
+                  <div class="short-item__price">
+                    <p class="short-item__price-num">11 000 грн</p>
+                    <s class="short-item__price-s-num">15 199 грн</s>
                   </div>
+                  <!-- catalog price end -->
 
-                  <img src="img/hol-1.png" alt="" class="hol-1.png">
-                </a>
-                <!-- catalog img end -->
+                  <!-- catalog item title start-->
+                  <div class="short-item__item-title">
+                    <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
+                  </div>
+                  <!-- catalog item title end-->
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">11 000 грн</p>
-                  <s class="short-item__price-s-num">15 199 грн</s>
+                  <!-- catalog item info start -->
+                  <div class="short-item__item-info">
+                    <div class="short-item__item-rating">
+                      <img src="img/icons/star-activ.jpg" alt="1">
+                      <img src="img/icons/star-activ.jpg" alt="2">
+                      <img src="img/icons/star-activ.jpg" alt="3">
+                      <img src="img/icons/star-activ.jpg" alt="4">
+                      <img src="img/icons/star-pasiv.svg" alt="5">
+                    </div>
+
+                    <div class="short-item__item-comment">
+                      <a class="short-item__comment-link" href="#">17</a>
+                    </div>
+                  </div>
+                  <!-- catalog item info end -->
+
+                  <!-- button cart start-->
+                  <a class="short-item__add-cart" href="#">В корзину</a>
+                  <!-- button cart end-->
                 </div>
-                <!-- catalog price end -->
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
+                <div class="short-item__item-list-style">
+                  <div class="short-item__ls-image">
+                    <a class="short-item__ls-img-link" href="#">
+                      <img class="short-item__img" src="img/hol-3.png" alt="hol-3.png">
+                    </a>
                   </div>
 
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">17</a>
-                  </div>
-                </div>
-                <!-- catalog item info end -->
 
-                <!-- button cart start-->
-                <a class="short-item__add-cart" href="#">В корзину</a>
-                <!-- button cart end-->
-              </div>
-              <!-- catalog item end -->
+                  <div class="short-item__ls-wrapper">
+                    <div class="short-item__ls-content">
+                      <div class="short-item__ls-actions">
+                        <span class="short-item__new">Новинка</span>
+                        <span class="short-item__present">Подарок</span>
+                        <span class="short-item__discount">-20%</span>
+                      </div>
 
-              <!-- 2 catalog item start -->
-              <div class="short-item__item">
+                      <div class="short-item__ls-title">
+                        <a class="short-item__ls-link" href="#">Холодильник Electrolux EWH 80 Formax</a>
+                      </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
-                  </div>
+                      <div class="short-item__ls-rating">
+                        <div class="short-item__item-rating">
+                          <img src="img/icons/star-activ.jpg" alt="1">
+                          <img src="img/icons/star-activ.jpg" alt="2">
+                          <img src="img/icons/star-activ.jpg" alt="3">
+                          <img src="img/icons/star-activ.jpg" alt="4">
+                          <img src="img/icons/star-pasiv.svg" alt="5">
+                        </div>
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
-                  </div>
+                        <div class="short-item__item-comment">
+                          <a class="short-item__comment-link" href="#">17</a>
+                        </div>
+                      </div>
+                    </div>
 
-                  <img src="img/hol-2.png" alt="" class="hol-2.png">
-                </a>
-                <!-- catalog img end -->
+                    <div class="short-item__ls-buy">
+                      <div class="short-item__price">
+                        <p class="short-item__price-num">11 000 грн</p>
+                        <s class="short-item__price-s-num">15 199 грн</s>
+                      </div>
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">14 200грн</p>
-                  <s class="short-item__price-s-num">17 399грн</s>
-                </div>
-                <!-- catalog price end -->
+                      <div class="short-item__ls-buttons">
+                        <div class="short-item__ls-button-list">
+                          <span class="short-item__add-link"></span>
+                          <span class="short-item__add-compare"></span>
+                        </div>
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Стиральная машина LG F-1096TD3</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
-                  </div>
-
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">2</a>
-                  </div>
-                </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <!-- button cart end-->
-                <a class="short-item__add-cart" href="#">В корзину</a>
-              </div>
-              <!-- catalog item end -->
-
-              <!-- 3 catalog item start -->
-              <div class="short-item__item">
-
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
-                  </div>
-
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
-                  </div>
-
-                  <img src="img/hol-3.png" alt="" class="hol-3.png">
-                </a>
-                <!-- catalog img end -->
-
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">14 200грн</p>
-                  <s class="short-item__price-s-num">17 399грн</s>
-                </div>
-                <!-- catalog price end -->
-
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Микроволновая печь WHIRLPOOL AMW 730 IX</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
-                  </div>
-
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">2</a>
+                        <a class="short-item__add-cart" href="#">В корзину</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <span class="short-item__add-cart-disabled">Нет в наличии</span>
-                <!-- button cart end-->
               </div>
               <!-- catalog item end -->
 
               <!-- 1 catalog item start -->
               <div class="short-item__item">
+                <div class="short-item__item-block-style">
+                  <!-- catalog img start -->
+                  <div class="short-item__img-link" href="#">
+                    <div class="short-item__lt-info">
+                      <span class="short-item__new">Новинка</span>
+                      <span class="short-item__present">Подарок</span>
+                    </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
+                    <div class="short-item__lb-info">
+                      <span class="short-item__discount">-20%</span>
+                    </div>
+
+                    <div class="short-item__rt-info">
+                      <span class="short-item__add-link"></span>
+                      <span class="short-item__add-compare"></span>
+                    </div>
+
+                    <a href="#">
+                      <img src="img/hol-1.png" alt="" class="hol-1.png">
+                    </a>
                   </div>
+                  <!-- catalog img end -->
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
+                  <!-- catalog price start -->
+                  <div class="short-item__price">
+                    <p class="short-item__price-num">11 000 грн</p>
+                    <s class="short-item__price-s-num">15 199 грн</s>
                   </div>
+                  <!-- catalog price end -->
 
-                  <img src="img/hol-1.png" alt="" class="hol-1.png">
-                </a>
-                <!-- catalog img end -->
+                  <!-- catalog item title start-->
+                  <div class="short-item__item-title">
+                    <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
+                  </div>
+                  <!-- catalog item title end-->
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">11 000 грн</p>
-                  <s class="short-item__price-s-num">15 199 грн</s>
+                  <!-- catalog item info start -->
+                  <div class="short-item__item-info">
+                    <div class="short-item__item-rating">
+                      <img src="img/icons/star-activ.jpg" alt="1">
+                      <img src="img/icons/star-activ.jpg" alt="2">
+                      <img src="img/icons/star-activ.jpg" alt="3">
+                      <img src="img/icons/star-activ.jpg" alt="4">
+                      <img src="img/icons/star-pasiv.svg" alt="5">
+                    </div>
+
+                    <div class="short-item__item-comment">
+                      <a class="short-item__comment-link" href="#">17</a>
+                    </div>
+                  </div>
+                  <!-- catalog item info end -->
+
+                  <!-- button cart start-->
+                  <a class="short-item__add-cart" href="#">В корзину</a>
+                  <!-- button cart end-->
                 </div>
-                <!-- catalog price end -->
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
+                <div class="short-item__item-list-style">
+                  <div class="short-item__ls-image">
+                    <a class="short-item__ls-img-link" href="#">
+                      <img class="short-item__img" src="img/hol-3.png" alt="hol-3.png">
+                    </a>
                   </div>
 
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">17</a>
+
+                  <div class="short-item__ls-wrapper">
+                    <div class="short-item__ls-content">
+                      <div class="short-item__ls-actions">
+                        <span class="short-item__new">Новинка</span>
+                        <span class="short-item__present">Подарок</span>
+                        <span class="short-item__discount">-20%</span>
+                      </div>
+
+                      <div class="short-item__ls-title">
+                        <a class="short-item__ls-link" href="#">Холодильник Electrolux EWH 80 Formax</a>
+                      </div>
+
+                      <div class="short-item__ls-rating">
+                        <div class="short-item__item-rating">
+                          <img src="img/icons/star-activ.jpg" alt="1">
+                          <img src="img/icons/star-activ.jpg" alt="2">
+                          <img src="img/icons/star-activ.jpg" alt="3">
+                          <img src="img/icons/star-activ.jpg" alt="4">
+                          <img src="img/icons/star-pasiv.svg" alt="5">
+                        </div>
+
+                        <div class="short-item__item-comment">
+                          <a class="short-item__comment-link" href="#">17</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="short-item__ls-buy">
+                      <div class="short-item__price">
+                        <p class="short-item__price-num">11 000 грн</p>
+                        <s class="short-item__price-s-num">15 199 грн</s>
+                      </div>
+
+                      <div class="short-item__ls-buttons">
+                        <div class="short-item__ls-button-list">
+                          <span class="short-item__add-link"></span>
+                          <span class="short-item__add-compare"></span>
+                        </div>
+
+                        <a class="short-item__add-cart" href="#">В корзину</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <a class="short-item__add-cart" href="#">В корзину</a>
-                <!-- button cart end-->
               </div>
               <!-- catalog item end -->
 
-              <!-- 2 catalog item start -->
+              <!-- 1 catalog item start -->
               <div class="short-item__item">
+                <div class="short-item__item-block-style">
+                  <!-- catalog img start -->
+                  <div class="short-item__img-link" href="#">
+                    <div class="short-item__lt-info">
+                      <span class="short-item__new">Новинка</span>
+                      <span class="short-item__present">Подарок</span>
+                    </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
+                    <div class="short-item__lb-info">
+                      <span class="short-item__discount">-20%</span>
+                    </div>
+
+                    <div class="short-item__rt-info">
+                      <span class="short-item__add-link"></span>
+                      <span class="short-item__add-compare"></span>
+                    </div>
+
+                    <a href="#">
+                      <img src="img/hol-1.png" alt="" class="hol-1.png">
+                    </a>
                   </div>
+                  <!-- catalog img end -->
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
+                  <!-- catalog price start -->
+                  <div class="short-item__price">
+                    <p class="short-item__price-num">11 000 грн</p>
+                    <s class="short-item__price-s-num">15 199 грн</s>
                   </div>
+                  <!-- catalog price end -->
 
-                  <img src="img/hol-2.png" alt="" class="hol-2.png">
-                </a>
-                <!-- catalog img end -->
+                  <!-- catalog item title start-->
+                  <div class="short-item__item-title">
+                    <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
+                  </div>
+                  <!-- catalog item title end-->
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">14 200грн</p>
-                  <s class="short-item__price-s-num">17 399грн</s>
+                  <!-- catalog item info start -->
+                  <div class="short-item__item-info">
+                    <div class="short-item__item-rating">
+                      <img src="img/icons/star-activ.jpg" alt="1">
+                      <img src="img/icons/star-activ.jpg" alt="2">
+                      <img src="img/icons/star-activ.jpg" alt="3">
+                      <img src="img/icons/star-activ.jpg" alt="4">
+                      <img src="img/icons/star-pasiv.svg" alt="5">
+                    </div>
+
+                    <div class="short-item__item-comment">
+                      <a class="short-item__comment-link" href="#">17</a>
+                    </div>
+                  </div>
+                  <!-- catalog item info end -->
+
+                  <!-- button cart start-->
+                  <a class="short-item__add-cart" href="#">В корзину</a>
+                  <!-- button cart end-->
                 </div>
-                <!-- catalog price end -->
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Стиральная машина LG F-1096TD3</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
+                <div class="short-item__item-list-style">
+                  <div class="short-item__ls-image">
+                    <a class="short-item__ls-img-link" href="#">
+                      <img class="short-item__img" src="img/hol-3.png" alt="hol-3.png">
+                    </a>
                   </div>
 
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">2</a>
+
+                  <div class="short-item__ls-wrapper">
+                    <div class="short-item__ls-content">
+                      <div class="short-item__ls-actions">
+                        <span class="short-item__new">Новинка</span>
+                        <span class="short-item__present">Подарок</span>
+                        <span class="short-item__discount">-20%</span>
+                      </div>
+
+                      <div class="short-item__ls-title">
+                        <a class="short-item__ls-link" href="#">Холодильник Electrolux EWH 80 Formax</a>
+                      </div>
+
+                      <div class="short-item__ls-rating">
+                        <div class="short-item__item-rating">
+                          <img src="img/icons/star-activ.jpg" alt="1">
+                          <img src="img/icons/star-activ.jpg" alt="2">
+                          <img src="img/icons/star-activ.jpg" alt="3">
+                          <img src="img/icons/star-activ.jpg" alt="4">
+                          <img src="img/icons/star-pasiv.svg" alt="5">
+                        </div>
+
+                        <div class="short-item__item-comment">
+                          <a class="short-item__comment-link" href="#">17</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="short-item__ls-buy">
+                      <div class="short-item__price">
+                        <p class="short-item__price-num">11 000 грн</p>
+                        <s class="short-item__price-s-num">15 199 грн</s>
+                      </div>
+
+                      <div class="short-item__ls-buttons">
+                        <div class="short-item__ls-button-list">
+                          <span class="short-item__add-link"></span>
+                          <span class="short-item__add-compare"></span>
+                        </div>
+
+                        <a class="short-item__add-cart" href="#">В корзину</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <!-- button cart end-->
-                <a class="short-item__add-cart" href="#">В корзину</a>
               </div>
               <!-- catalog item end -->
 
-              <!-- 3 catalog item start -->
+              <!-- 1 catalog item start -->
               <div class="short-item__item">
+                <div class="short-item__item-block-style">
+                  <!-- catalog img start -->
+                  <div class="short-item__img-link" href="#">
+                    <div class="short-item__lt-info">
+                      <span class="short-item__new">Новинка</span>
+                      <span class="short-item__present">Подарок</span>
+                    </div>
 
-                <!-- catalog img start -->
-                <a class="short-item__img-link" href="#">
-                  <div class="short-item__lt-info">
-                    <span class="short-item__new">Новинка</span>
-                    <span class="short-item__present">Подарок</span>
+                    <div class="short-item__lb-info">
+                      <span class="short-item__discount">-20%</span>
+                    </div>
+
+                    <div class="short-item__rt-info">
+                      <span class="short-item__add-link"></span>
+                      <span class="short-item__add-compare"></span>
+                    </div>
+
+                    <a href="#">
+                      <img src="img/hol-1.png" alt="" class="hol-1.png">
+                    </a>
                   </div>
+                  <!-- catalog img end -->
 
-                  <div class="short-item__lb-info">
-                    <span class="short-item__discount">-20%</span>
+                  <!-- catalog price start -->
+                  <div class="short-item__price">
+                    <p class="short-item__price-num">11 000 грн</p>
+                    <s class="short-item__price-s-num">15 199 грн</s>
                   </div>
+                  <!-- catalog price end -->
 
-                  <img src="img/hol-3.png" alt="" class="hol-3.png">
-                </a>
-                <!-- catalog img end -->
+                  <!-- catalog item title start-->
+                  <div class="short-item__item-title">
+                    <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
+                  </div>
+                  <!-- catalog item title end-->
 
-                <!-- catalog price start -->
-                <div class="short-item__price">
-                  <p class="short-item__price-num">14 200грн</p>
-                  <s class="short-item__price-s-num">17 399грн</s>
+                  <!-- catalog item info start -->
+                  <div class="short-item__item-info">
+                    <div class="short-item__item-rating">
+                      <img src="img/icons/star-activ.jpg" alt="1">
+                      <img src="img/icons/star-activ.jpg" alt="2">
+                      <img src="img/icons/star-activ.jpg" alt="3">
+                      <img src="img/icons/star-activ.jpg" alt="4">
+                      <img src="img/icons/star-pasiv.svg" alt="5">
+                    </div>
+
+                    <div class="short-item__item-comment">
+                      <a class="short-item__comment-link" href="#">17</a>
+                    </div>
+                  </div>
+                  <!-- catalog item info end -->
+
+                  <!-- button cart start-->
+                  <a class="short-item__add-cart" href="#">В корзину</a>
+                  <!-- button cart end-->
                 </div>
-                <!-- catalog price end -->
 
-                <!-- catalog item title start-->
-                <div class="short-item__item-title">
-                  <a class="short-item__item-link" href="#">Микроволновая печь WHIRLPOOL AMW 730 IX</a>
-                </div>
-                <!-- catalog item title end-->
-
-                <!-- catalog item info start -->
-                <div class="short-item__item-info">
-                  <div class="short-item__item-rating">
-                    <img src="img/icons/star-activ.jpg" alt="1">
-                    <img src="img/icons/star-activ.jpg" alt="2">
-                    <img src="img/icons/star-activ.jpg" alt="3">
-                    <img src="img/icons/star-activ.jpg" alt="4">
-                    <img src="img/icons/star-pasiv.svg" alt="5">
+                <div class="short-item__item-list-style">
+                  <div class="short-item__ls-image">
+                    <a class="short-item__ls-img-link" href="#">
+                      <img class="short-item__img" src="img/hol-3.png" alt="hol-3.png">
+                    </a>
                   </div>
 
-                  <div class="short-item__item-comment">
-                    <a class="short-item__comment-link" href="#">2</a>
+
+                  <div class="short-item__ls-wrapper">
+                    <div class="short-item__ls-content">
+                      <div class="short-item__ls-actions">
+                        <span class="short-item__new">Новинка</span>
+                        <span class="short-item__present">Подарок</span>
+                        <span class="short-item__discount">-20%</span>
+                      </div>
+
+                      <div class="short-item__ls-title">
+                        <a class="short-item__ls-link" href="#">Холодильник Electrolux EWH 80 Formax</a>
+                      </div>
+
+                      <div class="short-item__ls-rating">
+                        <div class="short-item__item-rating">
+                          <img src="img/icons/star-activ.jpg" alt="1">
+                          <img src="img/icons/star-activ.jpg" alt="2">
+                          <img src="img/icons/star-activ.jpg" alt="3">
+                          <img src="img/icons/star-activ.jpg" alt="4">
+                          <img src="img/icons/star-pasiv.svg" alt="5">
+                        </div>
+
+                        <div class="short-item__item-comment">
+                          <a class="short-item__comment-link" href="#">17</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="short-item__ls-buy">
+                      <div class="short-item__price">
+                        <p class="short-item__price-num">11 000 грн</p>
+                        <s class="short-item__price-s-num">15 199 грн</s>
+                      </div>
+
+                      <div class="short-item__ls-buttons">
+                        <div class="short-item__ls-button-list">
+                          <span class="short-item__add-link"></span>
+                          <span class="short-item__add-compare"></span>
+                        </div>
+
+                        <a class="short-item__add-cart" href="#">В корзину</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- catalog item info end -->
-
-                <!-- button cart start-->
-                <span class="short-item__add-cart-disabled">Нет в наличии</span>
-                <!-- button cart end-->
               </div>
               <!-- catalog item end -->
+
+              <!-- 1 catalog item start -->
+              <div class="short-item__item">
+                <div class="short-item__item-block-style">
+                  <!-- catalog img start -->
+                  <div class="short-item__img-link" href="#">
+                    <div class="short-item__lt-info">
+                      <span class="short-item__new">Новинка</span>
+                      <span class="short-item__present">Подарок</span>
+                    </div>
+
+                    <div class="short-item__lb-info">
+                      <span class="short-item__discount">-20%</span>
+                    </div>
+
+                    <div class="short-item__rt-info">
+                      <span class="short-item__add-link"></span>
+                      <span class="short-item__add-compare"></span>
+                    </div>
+
+                    <a href="#">
+                      <img src="img/hol-1.png" alt="" class="hol-1.png">
+                    </a>
+                  </div>
+                  <!-- catalog img end -->
+
+                  <!-- catalog price start -->
+                  <div class="short-item__price">
+                    <p class="short-item__price-num">11 000 грн</p>
+                    <s class="short-item__price-s-num">15 199 грн</s>
+                  </div>
+                  <!-- catalog price end -->
+
+                  <!-- catalog item title start-->
+                  <div class="short-item__item-title">
+                    <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
+                  </div>
+                  <!-- catalog item title end-->
+
+                  <!-- catalog item info start -->
+                  <div class="short-item__item-info">
+                    <div class="short-item__item-rating">
+                      <img src="img/icons/star-activ.jpg" alt="1">
+                      <img src="img/icons/star-activ.jpg" alt="2">
+                      <img src="img/icons/star-activ.jpg" alt="3">
+                      <img src="img/icons/star-activ.jpg" alt="4">
+                      <img src="img/icons/star-pasiv.svg" alt="5">
+                    </div>
+
+                    <div class="short-item__item-comment">
+                      <a class="short-item__comment-link" href="#">17</a>
+                    </div>
+                  </div>
+                  <!-- catalog item info end -->
+
+                  <!-- button cart start-->
+                  <a class="short-item__add-cart" href="#">В корзину</a>
+                  <!-- button cart end-->
+                </div>
+
+                <div class="short-item__item-list-style">
+                  <div class="short-item__ls-image">
+                    <a class="short-item__ls-img-link" href="#">
+                      <img class="short-item__img" src="img/hol-3.png" alt="hol-3.png">
+                    </a>
+                  </div>
+
+
+                  <div class="short-item__ls-wrapper">
+                    <div class="short-item__ls-content">
+                      <div class="short-item__ls-actions">
+                        <span class="short-item__new">Новинка</span>
+                        <span class="short-item__present">Подарок</span>
+                        <span class="short-item__discount">-20%</span>
+                      </div>
+
+                      <div class="short-item__ls-title">
+                        <a class="short-item__ls-link" href="#">Холодильник Electrolux EWH 80 Formax</a>
+                      </div>
+
+                      <div class="short-item__ls-rating">
+                        <div class="short-item__item-rating">
+                          <img src="img/icons/star-activ.jpg" alt="1">
+                          <img src="img/icons/star-activ.jpg" alt="2">
+                          <img src="img/icons/star-activ.jpg" alt="3">
+                          <img src="img/icons/star-activ.jpg" alt="4">
+                          <img src="img/icons/star-pasiv.svg" alt="5">
+                        </div>
+
+                        <div class="short-item__item-comment">
+                          <a class="short-item__comment-link" href="#">17</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="short-item__ls-buy">
+                      <div class="short-item__price">
+                        <p class="short-item__price-num">11 000 грн</p>
+                        <s class="short-item__price-s-num">15 199 грн</s>
+                      </div>
+
+                      <div class="short-item__ls-buttons">
+                        <div class="short-item__ls-button-list">
+                          <span class="short-item__add-link"></span>
+                          <span class="short-item__add-compare"></span>
+                        </div>
+
+                        <a class="short-item__add-cart" href="#">В корзину</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- catalog item end -->
+
+              <!-- 1 catalog item start -->
+              <div class="short-item__item">
+                <div class="short-item__item-block-style">
+                  <!-- catalog img start -->
+                  <div class="short-item__img-link" href="#">
+                    <div class="short-item__lt-info">
+                      <span class="short-item__new">Новинка</span>
+                      <span class="short-item__present">Подарок</span>
+                    </div>
+
+                    <div class="short-item__lb-info">
+                      <span class="short-item__discount">-20%</span>
+                    </div>
+
+                    <div class="short-item__rt-info">
+                      <span class="short-item__add-link"></span>
+                      <span class="short-item__add-compare"></span>
+                    </div>
+
+                    <a href="#">
+                      <img src="img/hol-1.png" alt="" class="hol-1.png">
+                    </a>
+                  </div>
+                  <!-- catalog img end -->
+
+                  <!-- catalog price start -->
+                  <div class="short-item__price">
+                    <p class="short-item__price-num">11 000 грн</p>
+                    <s class="short-item__price-s-num">15 199 грн</s>
+                  </div>
+                  <!-- catalog price end -->
+
+                  <!-- catalog item title start-->
+                  <div class="short-item__item-title">
+                    <a class="short-item__item-link" href="#">Водонагреватель Electrolux EWH 80 Formax</a>
+                  </div>
+                  <!-- catalog item title end-->
+
+                  <!-- catalog item info start -->
+                  <div class="short-item__item-info">
+                    <div class="short-item__item-rating">
+                      <img src="img/icons/star-activ.jpg" alt="1">
+                      <img src="img/icons/star-activ.jpg" alt="2">
+                      <img src="img/icons/star-activ.jpg" alt="3">
+                      <img src="img/icons/star-activ.jpg" alt="4">
+                      <img src="img/icons/star-pasiv.svg" alt="5">
+                    </div>
+
+                    <div class="short-item__item-comment">
+                      <a class="short-item__comment-link" href="#">17</a>
+                    </div>
+                  </div>
+                  <!-- catalog item info end -->
+
+                  <!-- button cart start-->
+                  <a class="short-item__add-cart" href="#">В корзину</a>
+                  <!-- button cart end-->
+                </div>
+
+                <div class="short-item__item-list-style">
+                  <div class="short-item__ls-image">
+                    <a class="short-item__ls-img-link" href="#">
+                      <img class="short-item__img" src="img/hol-3.png" alt="hol-3.png">
+                    </a>
+                  </div>
+
+
+                  <div class="short-item__ls-wrapper">
+                    <div class="short-item__ls-content">
+                      <div class="short-item__ls-actions">
+                        <span class="short-item__new">Новинка</span>
+                        <span class="short-item__present">Подарок</span>
+                        <span class="short-item__discount">-20%</span>
+                      </div>
+
+                      <div class="short-item__ls-title">
+                        <a class="short-item__ls-link" href="#">Холодильник Electrolux EWH 80 Formax</a>
+                      </div>
+
+                      <div class="short-item__ls-rating">
+                        <div class="short-item__item-rating">
+                          <img src="img/icons/star-activ.jpg" alt="1">
+                          <img src="img/icons/star-activ.jpg" alt="2">
+                          <img src="img/icons/star-activ.jpg" alt="3">
+                          <img src="img/icons/star-activ.jpg" alt="4">
+                          <img src="img/icons/star-pasiv.svg" alt="5">
+                        </div>
+
+                        <div class="short-item__item-comment">
+                          <a class="short-item__comment-link" href="#">17</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="short-item__ls-buy">
+                      <div class="short-item__price">
+                        <p class="short-item__price-num">11 000 грн</p>
+                        <s class="short-item__price-s-num">15 199 грн</s>
+                      </div>
+
+                      <div class="short-item__ls-buttons">
+                        <div class="short-item__ls-button-list">
+                          <span class="short-item__add-link"></span>
+                          <span class="short-item__add-compare"></span>
+                        </div>
+
+                        <a class="short-item__add-cart" href="#">В корзину</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- catalog item end -->
+
             </div>
 
             <!-- items more pagination -->

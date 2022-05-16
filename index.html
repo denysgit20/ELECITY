@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="css/style.min.css">
   <script defer src="js/jquery.min.js"></script>
   <script defer src="js/slick.min.js"></script>
+  <script defer src="js/jquery.ui.js"></script>
   <script defer src="js/script.js"></script>
   <title>ELECITY</title>
 </head>
 
 <body>
   <!-- header-->
-  <header class=" header">
+  <header class=" header" id="header">
 
     <div class="header__top">
       <div class="container">
@@ -38,6 +39,18 @@
               <li class="header__topNav-item"><a class="header__topNav-link" href="#">Оставить обращение</a></li>
             </ul>
           </div>
+          <!-- social link 2-->
+          <div class="header__social2">
+            <a class="header__social-item2" href="#" target="_blank"><img src="img/icons/viber.svg" alt="Viber"></a>
+            <a class="header__social-item2" href="#" target="_blank"><img src="img/icons/telegram.svg"
+                alt="Telegram"></a>
+          </div>
+          <!-- contacts 2 -->
+          <div class="header__contacts2">
+            <div class="header__contacts-phone2">
+              <a href="tel:+380971509555">+38(097)150-956-55</a>
+            </div>
+          </div>
           <!-- profile acc -->
           <div class="header__user-profile">
             <a class="header__profile-link" href="#">Личный кабинет</a>
@@ -56,10 +69,16 @@
             <div class="header__logo">
               <a class="header__logo-img" href="/"></a>
             </div>
+            <!-- all category -->
+            <div class="header__bottom-all2">
+              <a class="header__all-category-link2" href="#"><span class="header__all-category-icon2"></span>Все
+                категории</a>
+            </div>
             <!-- menu -->
             <div class="header__centerNav">
               <ul class="header__centerNav-menu">
-                <li class="header__centerNav-item active"><a class="active header__centerNav-link" href="./category.html">Техника</a>
+                <li class="header__centerNav-item active"><a class="active header__centerNav-link"
+                    href="./category.html">Техника</a>
                 </li>
                 <li class="header__centerNav-item"><a class="header__centerNav-link" href="#">Мебель</a></li>
                 <li class="header__centerNav-item"><a class="header__centerNav-link" href="#">Инструменты</a></li>
@@ -196,9 +215,6 @@
   </section>
   <!--index off slider -->
 
-  <!-- -->
-  <!-- -->
-  <!-- -->
   <!-- catalog -item start -->
   <section class="index-catalog">
     <div class="container">
@@ -207,9 +223,9 @@
       <div class="index-catalog__wrapper">
         <!-- 1 catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -219,8 +235,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-1.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-1.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -260,9 +283,9 @@
 
         <!-- 2 catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -272,8 +295,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-2.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-2.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -313,9 +343,9 @@
 
         <!-- 3 catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -325,8 +355,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-3.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-3.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -366,9 +403,9 @@
 
         <!-- 4 catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -378,8 +415,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-4.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-4.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -419,9 +463,9 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -431,8 +475,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-1.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-1.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -472,9 +523,9 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -484,8 +535,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-2.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-2.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -525,9 +583,9 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -537,8 +595,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-3.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-3.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -578,9 +643,9 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -590,8 +655,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-4.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-4.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -647,7 +719,7 @@
           <div class="index-catalog__banner-img">
             <img src="img/baner-img.png" alt="AirPods Pro">
           </div>
-          
+
         </a>
       </div>
       <!-- baner end -->
@@ -655,9 +727,9 @@
       <div class="index-catalog__wrapper">
         <!-- 1 catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -667,8 +739,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-1.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-1.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -708,9 +787,9 @@
 
         <!-- 2 catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -720,8 +799,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-2.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-2.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -761,9 +847,9 @@
 
         <!-- 3 catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -773,8 +859,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-3.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-3.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -814,9 +907,9 @@
 
         <!-- 4 catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -826,8 +919,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-4.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-4.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -867,9 +967,9 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -879,8 +979,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-1.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-1.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -920,9 +1027,9 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -932,8 +1039,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-2.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-2.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -973,9 +1087,9 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -985,8 +1099,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-3.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-3.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -1026,9 +1147,9 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-
+          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
           <!-- catalog img start -->
-          <a class="short-item__img-link" href="#">
+          <div class="short-item__img-link">
             <div class="short-item__lt-info">
               <span class="short-item__new">Новинка</span>
               <span class="short-item__present">Подарок</span>
@@ -1038,8 +1159,15 @@
               <span class="short-item__discount">-20%</span>
             </div>
 
-            <img src="img/catalog-img-4.png" alt="" class="short-item__img">
-          </a>
+            <div class="short-item__rt-info">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+            </div>
+
+            <a href="#">
+              <img src="img/catalog-img-4.png" alt="" class="short-item__img">
+            </a>
+          </div>
           <!-- catalog img end -->
 
           <!-- catalog price start -->
@@ -1496,6 +1624,8 @@
     <!-- footer copyright end -->
   </footer>
   <!-- footer end-->
+
+  <a id="arrow-top-page" class="arrow-top-page" href="#"></a>
 
 </body>
 
