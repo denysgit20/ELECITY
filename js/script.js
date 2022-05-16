@@ -103,9 +103,9 @@ $(function(){
      }
 
      if($(window).scrollTop() > 1){
-      $('#header').addClass('header__fixed-header')
+      // $('#header').addClass('header__fixed-header')
      } else {
-      $('#header').removeClass('header__fixed-header')
+      // $('#header').removeClass('header__fixed-header')
      }
    })
 
