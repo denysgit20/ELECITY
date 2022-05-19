@@ -129,4 +129,50 @@ $(function(){
 
       $('#item-list-style').removeClass('active-list-style-view')
     })
+
+// ============== slider compare ==============
+    $('.compare-page__slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      infinite: false,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    });
+
+
+    function compareResize(){
+      let lineNum = $('.compare-page__line-num');
+      let itmTable;
+      let arr = []
+      let maxHeight;
+    
+      for(let z = 0; z < lineNum.length; z++){
+        itmTable = $('.itm-'+z)
+    
+        for(let i = 0; i < itmTable.length; i++){
+          getHeight = itmTable.eq(i).height();
+          arr[i] = getHeight
+        }
+        maxHeight = Math.max.apply(null, arr) + 24;
+        itmTable.css({"height":maxHeight+'px'})
+      }
+    }
+    compareResize()
 })
+
