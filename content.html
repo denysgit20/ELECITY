@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/slick.min.js"></script>
+  <script defer src="js/jquery.ui.js"></script>
+  <script defer src="js/script.js"></script>
+  <title>ELECITY</title>
+</head>
+
+<body>
+  <!-- header-->
+  <div id="header-block" class="header-block__hide"></div>
+  <header class=" header" id="header">
+
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-wrapper">
+          <!-- location -->
+          <div class="header__location">
+            <a class="header__location-link" href="#">Киев</a>
+          </div>
+          <!-- menu -->
+          <div class="header__topNav">
+            <ul class="header__topNav-menu">
+              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Отзывы</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link" href="#">О нас</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Доставка</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Оплата</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Подключение техники</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Доп. сервис</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Наши гарантии</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Почему мы?</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Контакты</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Оставить обращение</a></li>
+            </ul>
+          </div>
+          <!-- social link 2-->
+          <div class="header__social2">
+            <a class="header__social-item2" href="#" target="_blank"><img src="img/icons/viber.svg" alt="Viber"></a>
+            <a class="header__social-item2" href="#" target="_blank"><img src="img/icons/telegram.svg"
+                alt="Telegram"></a>
+          </div>
+          <!-- contacts 2 -->
+          <div class="header__contacts2">
+            <div class="header__contacts-phone2">
+              <a href="tel:+380971509555">+38(097)150-956-55</a>
+            </div>
+          </div>
+          <!-- profile acc -->
+          <div class="header__user-profile">
+            <a class="header__profile-link" href="#">Личный кабинет</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header top off -->
+
+    <div class="header__center">
+      <div class="container">
+        <div class="header__center-wrapper">
+          <!-- header center left -->
+          <div class="header__center-left">
+            <!-- logo -->
+            <div class="header__logo">
+              <a class="header__logo-img" href="/"></a>
+            </div>
+            <!-- all category -->
+            <div class="header__bottom-all2">
+              <a class="header__all-category-link2" href="#"><span class="header__all-category-icon2"></span>Все
+                категории</a>
+            </div>
+            <!-- menu -->
+            <div class="header__centerNav">
+              <ul class="header__centerNav-menu">
+                <li class="header__centerNav-item active"><a class="active header__centerNav-link"
+                    href="./category.html">Техника</a>
+                </li>
+                <li class="header__centerNav-item"><a class="header__centerNav-link" href="#">Мебель</a></li>
+                <li class="header__centerNav-item"><a class="header__centerNav-link" href="#">Инструменты</a></li>
+              </ul>
+            </div>
+            <!-- search input -->
+            <div class="header__search">
+              <input class="header__search-input" type="text" placeholder="Что будем искать?">
+              <button class="header__search-submit" type="submit"></button>
+            </div>
+          </div>
+
+          <!-- header center right -->
+          <div class="header__center-right">
+            <!-- social link -->
+            <div class="header__social">
+              <a class="header__social-item" href="#" target="_blank"><img src="img/icons/viber.svg" alt="Viber"></a>
+              <a class="header__social-item" href="#" target="_blank"><img src="img/icons/telegram.svg"
+                  alt="Telegram"></a>
+            </div>
+            <!-- contacts -->
+            <div class="header__contacts">
+              <div class="header__contacts-phone">
+                <a href="tel:+380971509555">+38(097)150-956-55</a>
+                <span class="header__contacts-time">9:00 - 22:00 без выходных</span>
+              </div>
+            </div>
+            <!-- cart -->
+            <div class="header__cart">
+              <a class="header__cart-link" href="#">
+                <span class="header__cart-num">3</span>
+                <div class="header__cart-name">Корзина</div>
+                <div class="header__cart-money">19700 грн</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header center off -->
+
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-wrapper">
+          <!-- all category -->
+          <div class="header__bottom-all">
+            <a class="header__all-category-link" href="#"><span class="header__all-category-icon"></span>Все
+              категории</a>
+          </div>
+          <!-- menu -->
+          <div class="header__bottomNav">
+            <ul class="header__bottomNav-menu">
+              <li class="header__bottomNav-item"><a class="header__bottomNav-link" href="#">Бытовая техника</a></li>
+              <li class="header__bottomNav-item"><a class="header__bottomNav-link" href="#">Видео и аудио</a></li>
+              <li class="header__bottomNav-item"><a class="header__bottomNav-link" href="#">Климат</a></li>
+              <li class="header__bottomNav-item"><a class="header__bottomNav-link" href="#">Компьютерная техника</a>
+              </li>
+              <li class="header__bottomNav-item"><a class="header__bottomNav-link" href="#">Дом и дача</a></li>
+              <li class="header__bottomNav-item"><a class="header__bottomNav-link" href="#">Спорт и отдых</a></li>
+              <li class="header__bottomNav-item"><a class="header__bottomNav-link" href="#">Инструмент</a></li>
+              <li class="header__bottomNav-item"><a class="header__bottomNav-link" href="#">Авто </a></li>
+            </ul>
+          </div>
+          <!-- sale -->
+          <div class="header__bottomSale">
+            <ul class="header__bottomSale-menu">
+              <li class="header__bottomSale-item"><a class="header__bottomSale-link" href="#">% Распродажа</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header bottom off -->
+
+  </header>
+  <!-- header off -->
+
+  <!-- breadcrumbs start-->
+  <section class="breadcrumbps">
+    <div class="container">
+      <div class="breadcrumbps__wrapper">
+        <!-- все ссылки а сама страница обычным текстом  -->
+        <a href="#">Главная</a> /
+        <a href="#">Крупная бытовая техника</a> /
+        <span>Возврат и обмен</span>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumbs end-->
+
+  <!-- content-page start-->
+  <section class="content-page">
+    <div class="container">
+      <h1 class="content-page__title">Возврат и обмен</h1>
+
+      <div class="content-page__wrapper">
+        <p>В&nbsp;соответствии с&nbsp;нормами действующего законодательства Российской Федерации, регулирующего вопросы
+          по&nbsp;защите прав потребителей, при соблюдении определенных данным законодательством условий, вы&nbsp;как
+          потребитель вправе потребовать от&nbsp;продавца (изготовителя):</p>
+        <ul>
+          <li>заменить товар ненадлежащего качества;</li>
+          <li>обменять не&nbsp;подошедший по&nbsp;каким-либо характеристикам товар надлежащего качества на&nbsp;другой
+            товар или потребовать возврата уплаченной за&nbsp;товар денежной суммы в&nbsp;течение 7&nbsp;дней
+            со&nbsp;дня передачи товара (Закон РФ&nbsp;&laquo;О&nbsp;защите прав потребителей&raquo; Статья&nbsp;26.1.
+            п&nbsp;4&nbsp;Дистанционный способ продажи товара);</li>
+          <li>отказаться от&nbsp;исполнения договора купли-продажи и, возвратив товар ненадлежащего качества,
+            потребовать возврата уплаченной за&nbsp;товар денежной суммы (в&nbsp;течение 15&nbsp;дней со&nbsp;дня
+            передачи товара) (Закон РФ&nbsp;&laquo;О&nbsp;защите прав потребителей&raquo; Статья&nbsp;18 Права
+            потребителя при обнаружении в&nbsp;товаре недостатков).</li>
+        </ul>
+        <p>Для того, чтобы воспользоваться любым из&nbsp;вышеуказанных прав, вам необходимо предъявить в&nbsp;адрес
+          продавца (изготовителя) соответствующее требование:</p>
+
+        <p>
+          <a class="content-btn" href="#">Подать рекламацию</a>
+          <a class="content-btn" href="#">Проверить статус рекламации</a>
+        </p>
+
+        <p>Для сокращения сроков рассмотрения рекламации необходимо четко изложить суть рекламации (замена, возврат
+          денежных средств). В&nbsp;случае замены указать марку и&nbsp;модель товара, на&nbsp;который вы&nbsp;хотите
+          заменить.</p>
+
+        <h2><img src="img/icons/return-icon-1.svg" alt="icon"> При сдаче товара нужно предоставить документы:</h2>
+        <p>
+          - договор купли-продажи,<br>
+          - кассовый чек,<br>
+          - гарантийный талон,<br>
+          - акт авторизованного сервисного центра (при возврате товара ненадлежащего качества).
+        </p>
+        <p>Решение вопросов, связанных с&nbsp;гарантийным ремонтом товара, осуществляется Авторизованными сервисными
+          центрами, адреса и&nbsp;телефоны которых указаны в&nbsp;гарантийных талонах на&nbsp;товар.</p>
+
+        <h2><img src="img/icons/return-icon-2.svg" alt="icon">Обращаем Ваше внимание на нижеследующее</h2>
+        <p>При получении товара заказчик должен проверить его на&nbsp;отсутствие механических повреждений.
+          В&nbsp;соответствии со&nbsp;ст.&nbsp;459 ч.2&nbsp;ГК РФ&nbsp;(также ст.211&nbsp;ГК РФ), претензии
+          по&nbsp;внешнему виду и&nbsp;комплектности доставленного покупателю товара можно предъявить только
+          до&nbsp;момента передачи ему товара продавцом.</p>
+        <p>В&nbsp;случае отсутствия претензий заказчик подписывает договор купли-продажи, а&nbsp;в&nbsp;случае наличного
+          расчета за&nbsp;товар&nbsp;&mdash; производит его оплату. После этого курьер передает покупателю:</p>
+        <ol>
+          <li>товар;</li>
+          <li>кассовый чек, договор купли-продажи (при оплате за наличный расчет);</li>
+          <li>счет, счет-фактуру, товарную накладную (при оплате по безналичному расчету);</li>
+          <li>гарантийный талон (если иные способы активации гарантии не предусмотрены).</li>
+        </ol>
+        <p>Приобретение товара с&nbsp;доставкой не&nbsp;дает покупателю права требования транспортировки купленного
+          товара в&nbsp;целях гарантийного обслуживания или замену товара посредством выезда к&nbsp;покупателю,
+          в&nbsp;случаях, не&nbsp;предусмотренных &laquo;Законом о&nbsp;защите прав потребителей&raquo;.
+          В&nbsp;отношении возврата денежных средств за&nbsp;приобретенный товар, денежные средства
+          за&nbsp;предоставленную услугу доставки не&nbsp;возвращаются.</p>
+        <p><b>Обращаем Ваше внимание на&nbsp;нижеследующее:</b> при обмене/возврате товара клиент должен предоставить
+          для осмотра товара удобное, хорошо освещенное место. В&nbsp;противном случае, мы&nbsp;не&nbsp;сможем
+          осуществить обмен/возврат товара.</p>
+
+        <h2><img src="img/icons/return-icon-3.svg" alt="icon">Обмен и возврат товара надлежащего качества</h2>
+        <p>Потребитель вправе обменять у&nbsp;продавца непродовольственный товар надлежащего качества. При дистанционном
+          способе продажи, срок вашего обращения для обмена товара или возврата денежных средств при отказе
+          от&nbsp;товара надлежащего качества ограничен&nbsp;&mdash; в&nbsp;течении 7&nbsp;дней со&nbsp;дня передачи
+          товара потребителю (ЗоЗПП Статья&nbsp;26.1. Дистанционный способ продажи товара).</p>
+        <p><b>Возврат и&nbsp;отказ от&nbsp;товара надлежащего качества возможен только в&nbsp;случае сохранения его
+            товарного вида и&nbsp;потребительских свойств.</b></p>
+        <p>Расходы на доставку товара уточняйте у менеджера.</p>
+
+        <h2><img src="img/icons/return-icon-4.svg" alt="icon">Замена товара ненадлежащего качества</h2>
+        <p>В&nbsp;случае обнаружения вами недостатков в&nbsp;товаре и&nbsp;предъявления требований о&nbsp;его замене
+          продавец обязан заменить такой товар на&nbsp;новый. Если в&nbsp;момент предъявления данного требования
+          у&nbsp;продавца отсутствует необходимый для замены товар, замена должна быть проведена в&nbsp;течение месяца
+          со&nbsp;дня предъявления такого требования.</p>
+        <p>Замена технически сложных товаров, перечень которых утвержден Постановлением Правительства Российской
+          Федерации от&nbsp;10.11.2011&nbsp;г. &#8470;&nbsp;924 производится продавцом исключительно при обнаружении
+          существенных недостатков товара. Под существенным подразумевается неустранимый недостаток или недостаток,
+          который не&nbsp;может быть устранен без несоразмерных расходов или затрат времени, или выявляется
+          неоднократно, или проявляется вновь после его устранения, или другие подобные недостатки.</p>
+        <p>Основанием для произведения продавцом замены товара являются соответствующая рекламация и&nbsp;акт
+          авторизованного сервисного центра о&nbsp;наличии дефекта в&nbsp;товаре, его неремонтопригодности либо
+          о&nbsp;произведенном неоднократном ремонте. Для сокращения сроков рассмотрения рекламации просим вас подробно
+          указать, какой именно дефект содержит возвращаемый вами товар.</p>
+
+        <h2><img src="img/icons/return-icon-5.svg" alt="icon">Возврат денежных средств</h2>
+        <p><b>Для физических лиц</b></p>
+        <p>Для Физических лиц для возврата денежных средств за товар надлежащего и ненадлежащего качества необходимо
+          предоставить следующие документы:</p>
+        <p>
+          - договор купли-продажи,<br>
+          - кассовый чек,<br>
+          - заключение авторизованного сервис-центра (при возврате товара ненадлежащего качества),<br>
+          - при возврате товара необходимо иметь при себе документы на технику.
+        </p>
+        <p>При возврате техники клиенту выдается расписка сервиса о приемке техники.</p>
+
+        <p><b>Для юридических лиц</b></p>
+        <p>Для Юридических лиц для возврата денежных средств за товар ненадлежащего качества необходимо будет
+          предоставить следующие документы:</p>
+        <p>
+          - товарная накладная — 2 экз (возвратная накладная форма Торг-12),<br>
+          - счет-фактура,
+          - заключение авторизованного сервис-центра (при возврате товара ненадлежащего качества),<br>
+          - при возврате товара необходимо иметь при себе документы на технику.
+        </p>
+
+        <p>При возврате техники клиенту выдается расписка сервиса о приемке техники</p>
+        <p>Требования о возврате уплаченной за товар денежной суммы подлежит удовлетворению в течение 10 дней со дня
+          предъявления вами соответствующего требования (ЗоЗПП Статья 22. Сроки удовлетворения отдельных требований
+          потребителя).</p>
+
+      </div>
+
+      <div class="complaint">
+        <h3 class="h3-title complaint-main__title">Форма рекламации</h3>
+
+        <form>
+          <div class="complaint__wrapper">
+            <div class="complaint__left">
+              <div class="complaint__form-item">
+                <label class="complaint__form-label">Причина обращения</label>
+
+                <div class="complaint__form-select">
+                  <span class="complaint__select-name">Обмен товара</span>
+                  <ul class="complaint__select-list">
+                    <li class="complaint__select-item">Обмен товара</li>
+                    <li class="complaint__select-item">Возврат товара</li>
+                    <li class="complaint__select-item">Обмен товара</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="complaint__form-item">
+                <label class="complaint__form-label">ФИО</label>
+                <input class="complaint__form-input" type="text">
+              </div>
+
+              <div class="complaint__form-item">
+                <label class="complaint__form-label">Номер товарного чека</label>
+                <input class="complaint__form-input" type="text">
+              </div>
+
+              <div class="complaint__form-item">
+                <label class="complaint__form-label">Серийный номер</label>
+                <input class="complaint__form-input" type="text">
+              </div>
+
+              <div class="complaint__form-item">
+                <label class="complaint__form-label">Адрес проживания</label>
+                <input class="complaint__form-input" type="text">
+              </div>
+
+              <div class="complaint__form-item">
+                <label class="complaint__form-label">Телефон</label>
+                <input class="complaint__form-input" type="text">
+              </div>
+
+              <div class="complaint__form-item">
+                <label class="complaint__form-label">Email</label>
+                <input class="complaint__form-input" type="text">
+              </div>
+
+              <div class="complaint__form-item">
+                <label class="complaint__form-label">Суть рекламации</label>
+                <input class="complaint__form-input" type="text">
+              </div>
+
+              <div class="complaint__form-item complaint__two-col">
+                <label class="complaint__form-label">Акт авторизованного сервисного центра (если имеется)</label>
+                <input class="complaint__form-input" type="text">
+              </div>
+            </div>
+
+            <div class="complaint__right">
+              <div class="complaint__attach-files">
+                <div class="complaint__files-title">Прикрепить фотографии (jpg, png)</div>
+
+                <p class="complaint__files-text">Заявки рассматриваются только с&nbsp;фотографиями! Прикрепите,
+                  пожалуйста, фотографии товара, упаковочного материала, документов купли-продажи.</p>
+  
+                <div class="complaint__add-files-item">
+                  <a class="complaint__add-files-link" href="#">Выбрать файл</a>
+  
+                  <span class="complaint__add-files-title">Файл не выбран</span>
+                </div>
+  
+                <div class="complaint__add-files-item">
+                  <a class="complaint__add-files-link" href="#">Выбрать файл</a>
+  
+                  <span class="complaint__add-files-title">Файл не выбран</span>
+                </div>
+  
+                <div class="complaint__add-files-item">
+                  <a class="complaint__add-files-link" href="#">Выбрать файл</a>
+                  
+                  <span class="complaint__add-files-title">Файл не выбран</span>
+                </div>
+              </div>
+
+              <button class="complaint__button" type="submit">Отправить</button>
+
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="complaint">
+        <h3 class="h3-title complaint-main__title">Проверить статус рекламации</h3>
+
+        <div class="complaint__wrapper">
+          <form>
+            <div class="complaint__left">
+              <div class="complaint__form-item complaint__two-col">
+                <label class="complaint__form-label">Введите номер заказа</label>
+                <input class="complaint__form-input" type="text">
+              </div>
+
+              <div class="complaint__form-item complaint__two-col">
+                <button class="complaint__button" type="submit">Проверить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- content-page end -->
+
+
+  <!-- footer start-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <!-- left col start-->
+        <div class="footer__info">
+          <!-- logo -->
+          <a href="#" class="footer__logo-link">
+            <img class="footer__logo-img" src="img/logo-header-center.png" alt="ELECITY">
+          </a>
+
+          <!-- footer phone -->
+          <div class="footer__phone">
+            <a href="tel:+3809715095655">+38(097)150-956-55</a>
+          </div>
+
+          <!-- social link -->
+          <div class="footer__social">
+            <a class="footer__social-link" href="#" target="_blank"><img src="img/icons/footer-tg.svg"
+                alt="telegram"></a>
+            <a class="footer__social-link" href="#" target="_blank"><img src="img/icons/footer-vk.svg"
+                alt="vkontakte"></a>
+            <a class="footer__social-link" href="#" target="_blank"><img src="img/icons/footer-vb.svg" alt="vaiber"></a>
+            <a class="footer__social-link" href="#" target="_blank"><img src="img/icons/footer-odn.svg"
+                alt="odnoklasniki"></a>
+          </div>
+
+          <!-- footer props -->
+          <div class="footer__props">
+            ООО "БТ МАРКЕТ", ИНН77284830607 Киев, пл. Хрещатик д. 22, ком. 1
+          </div>
+        </div>
+        <!-- left col end -->
+
+        <!-- footer cols start-->
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Как оформить заказ</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Доставка</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Оплата</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Прием товара</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Почему покупать у нас</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Подключение техники</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Отзывы о нас</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Пользовательское соглашение</a></li>
+        </ul>
+
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">О компании</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Юридическая информация</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Для поставщиков</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Для оптовых клиентов</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Оставить обращение</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Политика конфиденциальности</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости и обзоры</a></li>
+        </ul>
+
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Вопрос-ответ</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Дополнительный сервис</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Проверка на битые пиксели</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Утилизация техники</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Гарантийное обслуживание</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Сервисные центры</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Наши гарантии</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Обмен и возврат товара</a></li>
+        </ul>
+        <!-- footer cols end -->
+      </div>
+    </div>
+
+    <!-- footer copyright start -->
+    <div class="footer__copyright">
+      <div class="container">
+        <p class="footer__copyright-text">Обращаем Ваше внимание на&nbsp;то, что данный интернет-сайт носит
+          исключительно информационный характер и&nbsp;ни&nbsp;при каких условиях информационные материалы и&nbsp;цены,
+          размещенные на&nbsp;сайте, не&nbsp;являются публичной офертой, определяемой положениями Статьи 437
+          Гражданского кодекса&nbsp;UK.
+          <br>elecity.ua &copy;&nbsp;2011-2022</p>
+      </div>
+    </div>
+    <!-- footer copyright end -->
+  </footer>
+  <!-- footer end-->
+
+  <a id="arrow-top-page" class="arrow-top-page" href="#"></a>
+</body>
+
+</html>
