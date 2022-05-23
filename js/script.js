@@ -176,5 +176,13 @@ $(function(){
       }
     }
     compareResize()
+
+       // ============== accordion install page ==============
+       $('.work-price__category').hide()
+
+       $('.work-price__open-category').click(function(){
+        $(this).toggleClass('active')
+        $(this ).next('.work-price__category').slideToggle();
+      })
 })
 
