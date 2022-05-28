@@ -101,11 +101,11 @@ $(function () {
     }
 
     if ($(window).scrollTop() > 1) {
-      // $('#header').addClass('header__fixed-header')
-      // $('#header-block').addClass('header-block__show')
+      $('#header').addClass('header__fixed-header')
+      $('#header-block').addClass('header-block__show')
     } else {
-      // $('#header').removeClass('header__fixed-header')
-      // $('#header-block').removeClass('header-block__show')
+      $('#header').removeClass('header__fixed-header')
+      $('#header-block').removeClass('header-block__show')
     }
   })
 
@@ -237,4 +237,77 @@ $(function () {
     ]
   });
 
+  // ===================== modal poput CATEGORY FILTER ==================
+  $('.category-filter').click(function (event) {
+    event.preventDefault()
+    $(this).children('.category-filter-list').slideToggle('fast');
+  })
+
+  // ===================== modal poput HEADER USER ==================
+  $('.header__profile-link').click(function (event) {
+    event.preventDefault()
+    $(this).next('.header-user-menu').slideToggle('fast');
+  })
+
+
+  // ===================== modal poput HEADER CART ==================
+  $('.header__cart-link').click(function (event) {
+    event.preventDefault()
+  })
+
+    // ===================== modal poput HEADER navi-category ==================
+    $('.header__all-category-link').click(function (event) {
+      event.preventDefault()
+      $('#navi-category').slideToggle('fast');
+      $(this).toggleClass('header__all-category-link-active');
+      $('.header__all-category-link2').toggleClass('header__all-category-link2-active');
+    })
+
+    $('.header__all-category-link2').click(function (event) {
+      event.preventDefault()
+      $('#navi-category').slideToggle('fast');
+      $(this).toggleClass('header__all-category-link2-active');
+      $('.header__all-category-link').toggleClass('header__all-category-link-active');
+    })
+    
+    // ================ tabs navi-category =====================
+
+    // let categoryNum;
+    // $( ".navi-category__list-link" ).hover(function() {
+    //  $('.navi-category__list-content').hide();
+    //  categoryNum = $(this).attr('data-attribute')
+    //  $('.navi-category__nc-' + categoryNum).show();
+    // });
+
+    let navItem = $('.navi-category__list-link');
+    let windowsWidth;
+    let categoryNum;
+    let categoryMenuTimer;
+
+    // при наведении запускается таймер на 300мс, и через 300мс выполняется функция $('.navi-category__list-content').hide()
+    // и отображает ИД ссылкы на которую навеен курсор мыши
+    // если мышку убрали раньше таймера  то таймер останавливается  clearTimeout(categoryMenuTimer);
+    // и если перевели курсор на другую ссылку то таймер тоже останавливается с предедущей функции
+    // когда нажимаем пос ссылки происходит перещёт ширины екрана и если ширина меньше 768 то стандартное событые по клике отменяется
+    navItem.each(function(i, el){
+      $(el).on({
+        mouseenter: function(){
+          clearTimeout(categoryMenuTimer);
+          categoryMenuTimer = setTimeout(function(){
+            categoryNum = $(el).attr('data-attribute')
+            $('.navi-category__list-content').hide()
+            $('.navi-category__nc-' + categoryNum).show('fade', 300);
+          }, 300)
+        },
+        mouseleave: function(){
+          clearTimeout(categoryMenuTimer);
+        },
+        click: function(event){
+          windowsWidth = $(window).width();
+          if(windowsWidth <= 768){
+            event.preventDefault()
+          }
+        }
+      })
+    })
 })
