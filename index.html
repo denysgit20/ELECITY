@@ -9,6 +9,8 @@
   <script defer src="js/jquery.min.js"></script>
   <script defer src="js/slick.min.js"></script>
   <script defer src="js/jquery.ui.js"></script>
+  <script defer src="js/jquery.magnific-popup.min.js"></script>
+  <script defer src="js/jquery.mask.min.js"></script>
   <script defer src="js/script.js"></script>
   <title>ELECITY</title>
 </head>
@@ -23,14 +25,17 @@
         <div class="header__top-wrapper">
           <!-- location -->
           <div class="header__location">
-            <a class="header__location-link" href="#">Киев</a>
+            <a class="header__location-link popup-open-modal" href="#change-city-popup">Киев</a>
           </div>
           <!-- menu -->
           <div class="header__topNav">
             <ul class="header__topNav-menu">
-              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Отзывы</a></li>
-              <li class="header__topNav-item"><a class="header__topNav-link" href="#">О нас</a></li>
-              <li class="header__topNav-item"><a class="header__topNav-link" href="#">Доставка</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link popup-open-modal"
+                  href="#popup-lk">Отзывы</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link popup-open-modal" href="#popup-sms">О
+                  нас</a></li>
+              <li class="header__topNav-item"><a class="header__topNav-link popup-open-modal"
+                  href="#popup-buy-one-click">Доставка</a></li>
               <li class="header__topNav-item"><a class="header__topNav-link" href="#">Оплата</a></li>
               <li class="header__topNav-item"><a class="header__topNav-link" href="#">Подключение техники</a></li>
               <li class="header__topNav-item"><a class="header__topNav-link" href="#">Доп. сервис</a></li>
@@ -95,10 +100,10 @@
               </ul>
             </div>
             <!-- search input -->
-            <div class="header__search">
-              <input class="header__search-input" type="text" placeholder="Что будем искать?">
-              <button class="header__search-submit" type="submit"></button>
-            </div>
+            <a href="#popup-search" class="header__search popup-search-modal">
+              <div class="header__search-input">Что будем искать?</div>
+              <div class="header__search-submit" type="submit"></div>
+            </a>
           </div>
 
           <!-- header center right -->
@@ -295,7 +300,7 @@
             <!-- меню 1го уровня end -->
 
             <!-- через data-атрибуты соединяем эти 2 меню -->
-            
+
             <!-- меню 2го уровня Правое -->
             <div class="navi-category__list-content navi-category__nc-1">
               1
@@ -3069,7 +3074,7 @@
       <div class="index-catalog__wrapper">
         <!-- 1 catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3129,7 +3134,7 @@
 
         <!-- 2 catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3189,7 +3194,7 @@
 
         <!-- 3 catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3249,7 +3254,7 @@
 
         <!-- 4 catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3309,7 +3314,7 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3369,7 +3374,7 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3429,7 +3434,7 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3489,7 +3494,7 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3573,7 +3578,7 @@
       <div class="index-catalog__wrapper">
         <!-- 1 catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3633,7 +3638,7 @@
 
         <!-- 2 catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3693,7 +3698,7 @@
 
         <!-- 3 catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3753,7 +3758,7 @@
 
         <!-- 4 catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3813,7 +3818,7 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3873,7 +3878,7 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3933,7 +3938,7 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -3993,7 +3998,7 @@
 
         <!-- catalog item start -->
         <div class="short-item__item">
-          <a class="short-item__fast-view" href="#">Быстрый просмотр</a>
+          <a class="short-item__fast-view fast-view-ajax" href="item-fast-view.html">Быстрый просмотр</a>
           <!-- catalog img start -->
           <div class="short-item__img-link">
             <div class="short-item__lt-info">
@@ -4470,6 +4475,289 @@
     <!-- footer copyright end -->
   </footer>
   <!-- footer end-->
+
+  <!-- popup modal start-->
+  <div id="change-city-popup" class="white-popup mfp-hide">
+    <div class="change-city-popup">
+      <h4 class="change-city-popup__title">Выберите город</h4>
+    </div>
+
+    <input class="change-city-popup__input" type="text" placeholder="Начните вводить">
+
+    <ul class="change-city-popup__list">
+      <li class="change-city-popup__item">
+        <a class="change-city-popup__link" href="#">Львов</a>
+      </li>
+      <li class="change-city-popup__item">
+        <a class="change-city-popup__link" href="#">Киев</a>
+      </li>
+      <li class="change-city-popup__item">
+        <a class="change-city-popup__link" href="#">Виница</a>
+      </li>
+      <li class="change-city-popup__item">
+        <a class="change-city-popup__link" href="#">Херсон</a>
+      </li>
+      <li class="change-city-popup__item">
+        <a class="change-city-popup__link" href="#">Житомер</a>
+      </li>
+      <li class="change-city-popup__item">
+        <a class="change-city-popup__link" href="#">Одесса</a>
+      </li>
+      <li class="change-city-popup__item">
+        <a class="change-city-popup__link" href="#">Ифано-Франковск</a>
+      </li>
+      <li class="change-city-popup__item">
+        <a class="change-city-popup__link" href="#">Чернигов</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="popup-lk" class="white-popup mfp-hide">
+    <div class="popup-form">
+      <h4 class="popup-form__title">Вход в личный кабинет</h4>
+
+      <div class="popup-form__text popup-form__text-center">
+        Введите номер телефона. Вам будет выслан код с паролем по смс
+      </div>
+
+      <div class="popup-form__item">
+        <label class="popup-form__lable">Телефон</label>
+        <input class="popup-form__input popup-form__mask-phone-number" type="text" placeholder="(093)-00-00-000">
+      </div>
+
+      <div class="popup-form__text">
+        Код будет отправлен через 50 секунд.....
+      </div>
+
+      <button class="popup-form__submit" type="submit">Повторить отправку</button>
+    </div>
+  </div>
+
+  <div id="popup-sms" class="white-popup mfp-hide">
+    <div class="popup-form">
+      <h4 class="popup-form__title">Введите код из смс</h4>
+
+      <div class="popup-form__text">
+        Мы отправили код на телефон с номером<br>
+        <b>+38 (098) .....23</b>
+      </div>
+
+      <div class="popup-form__item">
+        <div class="popup-form__item">
+          <div class="popup-form__input-sms-wrapper">
+            <input class="popup-form__input-sms" type="text">
+            <input class="popup-form__input-sms" type="text">
+            <input class="popup-form__input-sms" type="text">
+            <input class="popup-form__input-sms" type="text">
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-form__text">
+        Отправить код повторно через 02:24
+      </div>
+
+      <div class="popup-form__text-center">
+        <button class="popup-form__submit" type="submit">Войти</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-buy-one-click" class="white-popup mfp-hide">
+    <div class="popup-form">
+      <h4 class="popup-form__title">Купить в 1 клик</h4>
+
+      <div class="popup-form__item">
+        <label class="popup-form__lable">Имя</label>
+        <input class="popup-form__input" type="text">
+      </div>
+      <div class="popup-form__item">
+        <label class="popup-form__lable">Телефон</label>
+        <input class="popup-form__input popup-form__mask-phone-number" type="text" placeholder="(093)-00-00-000">
+      </div>
+
+      <div class="popup-form__text">
+        Укажите Ваше имя и свой номер телефона для оформления заказа. Оператор перезвонит Вам, чтобы подтвердить заказ и
+        согласовать детали доставки.
+      </div>
+
+      <div class="popup-form__text-center">
+        <button class="popup-form__submit" type="submit">Купить</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-search" class="search-popup-bg  mfp-hide">
+    <div class="search-popup__form">
+      <input class="search-popup__input" type="text" placeholder="Найти ...">
+    </div>
+
+    <ul class="search-popup__category-list">
+      <li class="search-popup__category-item">
+        <a href="" class="search-popup__category-link">Холодильники</a>
+        <span class="search-popup__category-num">(375)</span>
+      </li>
+
+      <li class="search-popup__category-item">
+        <a href="" class="search-popup__category-link">Холодильники промышленные</a>
+        <span class="search-popup__category-num">(23)</span>
+      </li>
+
+      <li class="search-popup__category-item">
+        <a href="" class="search-popup__category-link">Автохолодильники</a>
+        <span class="search-popup__category-num">(57)</span>
+      </li>
+
+      <li class="search-popup__category-item">
+        <a href="" class="search-popup__category-link">Винные шкафы</a>
+        <span class="search-popup__category-num">(57)</span>
+      </li>
+    </ul>
+
+    <div class="search-popup__product-list">
+      <div class="search-popup__product-item">
+        <div class="search-popup__product-left">
+          <div class="search-popup__product-image">
+            <a href="#">
+              <img class="search-popup__product-img" src="img/hol-1.png" alt="">
+            </a>
+          </div>
+
+          <div class="search-popup__product-header">
+            <a href="#" class="search-popup__product--title">Холодильник Electrolux EWH 80 Formax</a>
+
+            <div class="search-popup__product-social">
+              <div class="short-item__item-rating">
+                <img src="img/icons/star-activ.jpg" alt="1">
+                <img src="img/icons/star-activ.jpg" alt="2">
+                <img src="img/icons/star-activ.jpg" alt="3">
+                <img src="img/icons/star-activ.jpg" alt="4">
+                <img src="img/icons/star-pasiv.svg" alt="5">
+              </div>
+
+              <div class="short-item__item-comment">
+                <a class="short-item__comment-link" href="#">17</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="search-popup__product-right">
+          <div class="search-popup__cost">
+            <s class="search-popup__price-s">
+              18 000 грн
+            </s>
+            <div class="search-popup__price-num">
+              14 300 грн
+            </div>
+          </div>
+
+          <div class="search-popup__buttons">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+              <a class="search-popup__add-cart" href="#">Купить</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-popup__product-item">
+        <div class="search-popup__product-left">
+          <div class="search-popup__product-image">
+            <a href="#">
+              <img class="search-popup__product-img" src="img/hol-1.png" alt="">
+            </a>
+          </div>
+
+          <div class="search-popup__product-header">
+            <a href="#" class="search-popup__product--title">Холодильник Electrolux EWH 80 Formax</a>
+
+            <div class="search-popup__product-social">
+              <div class="short-item__item-rating">
+                <img src="img/icons/star-activ.jpg" alt="1">
+                <img src="img/icons/star-activ.jpg" alt="2">
+                <img src="img/icons/star-activ.jpg" alt="3">
+                <img src="img/icons/star-activ.jpg" alt="4">
+                <img src="img/icons/star-pasiv.svg" alt="5">
+              </div>
+
+              <div class="short-item__item-comment">
+                <a class="short-item__comment-link" href="#">17</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="search-popup__product-right">
+          <div class="search-popup__cost">
+            <s class="search-popup__price-s">
+              18 000 грн
+            </s>
+            <div class="search-popup__price-num">
+              14 300 грн
+            </div>
+          </div>
+
+          <div class="search-popup__buttons">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+              <a class="search-popup__add-cart" href="#">Купить</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-popup__product-item">
+        <div class="search-popup__product-left">
+          <div class="search-popup__product-image">
+            <a href="#">
+              <img class="search-popup__product-img" src="img/hol-1.png" alt="">
+            </a>
+          </div>
+
+          <div class="search-popup__product-header">
+            <a href="#" class="search-popup__product--title">Холодильник Electrolux EWH 80 Formax</a>
+
+            <div class="search-popup__product-social">
+              <div class="short-item__item-rating">
+                <img src="img/icons/star-activ.jpg" alt="1">
+                <img src="img/icons/star-activ.jpg" alt="2">
+                <img src="img/icons/star-activ.jpg" alt="3">
+                <img src="img/icons/star-activ.jpg" alt="4">
+                <img src="img/icons/star-pasiv.svg" alt="5">
+              </div>
+
+              <div class="short-item__item-comment">
+                <a class="short-item__comment-link" href="#">17</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="search-popup__product-right">
+          <div class="search-popup__cost">
+            <s class="search-popup__price-s">
+              18 000 грн
+            </s>
+            <div class="search-popup__price-num">
+              14 300 грн
+            </div>
+          </div>
+
+          <div class="search-popup__buttons">
+              <span class="short-item__add-link"></span>
+              <span class="short-item__add-compare"></span>
+              <a class="search-popup__add-cart" href="#">Купить</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- popup modal end -->
 
   <a id="arrow-top-page" class="arrow-top-page" href="#"></a>
 
