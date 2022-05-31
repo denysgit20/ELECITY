@@ -359,4 +359,67 @@ $(function () {
     }, 800)
   });
 
+  // ============== index-catalog wrapper for mobile ==============
+  $('.index-catalog__wrapper').slick({
+    arrows: false,
+    infinite: false,
+    variableWidth: true,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 10000,
+        settings: "unslick",
+      },
+    ]
+  });
+
+  // =================== Появления меню хедера ==========================
+  $('.header__more-menu-link').on('click', function (event) {
+    event.preventDefault();
+  });
+
+  // ===================== modal poput HEADER Burger ==================
+  $('.header__mobile-main-menu-link').click(function (event) {
+    event.preventDefault()
+    $('.header__top').addClass('header__top-active');
+  })
+
+  $('.header__mb-menu-close').click(function (event) {
+    event.preventDefault()
+    $('.header__top').removeClass('header__top-active');
+  })
+
+  $('.header__all-category-link3').click(function (event) {
+    event.preventDefault()
+    $('#navi-category').slideToggle('fast');
+  })
+
+  $('.navi-category__mobile-back-to-menu').click(function (event) {
+    event.preventDefault()
+    $('#navi-category').slideToggle('fast');
+  })
+
+  $('.navi-category__mobile-back-all-category').click(function (event) {
+    event.preventDefault()
+    $(this).parent('.navi-category__list-content').hide('fast');
+  })
+
+  $('.navi-category__category-title').click(function (event) {
+    windowsWidth = $(window).width();
+    if (windowsWidth <= 768) {
+      event.preventDefault()
+      $(this).next('.navi-category-subcategory-menu').slideToggle('fast');
+      $(this).toggleClass('navi-category__category-title-active')
+    }
+  })
 })
