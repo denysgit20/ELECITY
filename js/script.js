@@ -190,6 +190,7 @@ $(function () {
   $('.order-list__item-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    variableWidth: true,
     arrows: true,
     responsive: [{
         breakpoint: 1300,
@@ -238,7 +239,7 @@ $(function () {
   });
 
   // ===================== modal poput CATEGORY FILTER ==================
-  $('.category-filter').click(function (event) {
+  $('.category-filter__sort-list').click(function (event) {
     event.preventDefault()
     $(this).children('.category-filter-list').slideToggle('fast');
   })
@@ -421,5 +422,142 @@ $(function () {
       $(this).next('.navi-category-subcategory-menu').slideToggle('fast');
       $(this).toggleClass('navi-category__category-title-active')
     }
+  })
+
+  // ===================== beadcrumbs fo last child ==================
+  let breadCrumbsMobile = $('.breadcrumbps__wrapper a')
+  breadCrumbsMobile.eq(breadCrumbsMobile.length - 1).css('display', 'inline-block').addClass('breadcrumbps__link-mobile')
+
+  // ===================== sldier for full-item-page ==================
+  $('.full-item__recommendation-wrapper').slick({
+    arrows: false,
+    infinite: false,
+    variableWidth: true,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 10000,
+        settings: "unslick",
+      },
+    ]
+  });
+
+  $('.full-item__more-buy-wrapper').slick({
+    arrows: false,
+    infinite: false,
+    variableWidth: true,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 10000,
+        settings: "unslick",
+      },
+    ]
+  });
+
+  $('.full-item__present-wrapper').slick({
+    arrows: false,
+    infinite: false,
+    variableWidth: true,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 10000,
+        settings: "unslick",
+      },
+    ]
+  });
+
+  // ===================== accordeon for return page==================
+  $('.return__mobile-slide').click(function (event) {
+    windowsWidth = $(window).width();
+    if (windowsWidth <= 768) {
+      event.preventDefault()
+      $(this).next('.return__mobile-wrapper').slideToggle('fast');
+      $(this).toggleClass('return__mobile-slide-active')
+    }
+  })
+
+  // ===================== sldier for leter-list catalog ==================
+  $('.leter-list__catalog').slick({
+    arrows: false,
+    infinite: false,
+    variableWidth: true,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 10000,
+        settings: "unslick",
+      },
+    ]
+  });
+
+  // ===================== category page mobile filter link =================
+  $('.category-items__mobile-filter-link').click(function (event) {
+    event.preventDefault()
+    $('.category-page__filter').show('fast');
+
+  })
+
+  // ===================== category page mobile close link =================
+  $('.category-filter__close-link').click(function (event) {
+    event.preventDefault()
+    $('.category-page__filter').hide('fast');
+  })
+
+  $('.compare-info__compare-fixed-clear').click(function (event) {
+    event.preventDefault()
+    $('.compare-info').hide('fast');
+  })
+
+  $('.category-filter__more-link').click(function (event) {
+    event.preventDefault()
+    $(this).hide('fast');
+    $('.category-filter').removeClass('category-filter__small-height');
+  })
+
+  $('.category-filter__result-clear').click(function (event) {
+    event.preventDefault()
+    $('.category-filter__result').hide('fast');
   })
 })
